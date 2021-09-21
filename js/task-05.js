@@ -5,9 +5,6 @@ const refs = {
 refs.input.addEventListener('input', onInputChange);
 
 function onInputChange(event) {
-   if(refs.input = '') {
-       refs.nameLabel = 'незнакомец';
-   } else {
-       refs.nameLabel.textContent = event.currentTarget.value;  
-    }
-};
+    const changeInputColor = (refs.input == '') ? 
+       refs.nameLabel = 'незнакомец' : refs.nameLabel.textContent = event.currentTarget.value;  
+    };

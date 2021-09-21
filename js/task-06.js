@@ -8,11 +8,8 @@ inputValidation.addEventListener('change', chekInputLength);
 
 //функція для зміни кольору інпута
 function chekInputLength(event) {
-if (event.target.value.length == inputlength){
-    inputValidation.classList.add('valid');
-    inputValidation.classList.remove('invalid');
-} else {
-    inputValidation.classList.remove('valid');
+const changeColor = (event.target.value.length == inputlength) ? 
+    inputValidation.classList.add('valid') ||
+    inputValidation.classList.remove('invalid') : inputValidation.classList.remove('valid') ||
     inputValidation.classList.add('invalid');
-}
 }
